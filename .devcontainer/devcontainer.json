@@ -1,9 +1,12 @@
 {
   // Name this configuration
-  "name": "Codespace for Skills!",
+  "name": "Lab-CodeSpace-PFranco",
   // Use the base codespace image
-  "image": "mcr.microsoft.com/vscode/devcontainers/universal:latest",
-
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    "docker-in-docker": "latest",
+    "azure-cli": "latest"
+    },
   "remoteUser": "codespace",
   "overrideCommand": false,
   
@@ -11,7 +14,13 @@
   "customizations": {
       "vscode": {
           "extensions": [
-              "GitHub.copilot"
+                "GitHub.copilot",
+                "ms-azuretools.vscode-bicep",
+                "ms-python.python",
+                "esbenp.prettier-vscode",
+                "dbaeumer.vscode-eslint",
+                "msjsdiag.vscode-react-native",
+                "ms-vscode.node-debug2"
           ]
       },
       "codespaces": {
